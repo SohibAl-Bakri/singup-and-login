@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">flutterTask</string>
+    <string name="app_name">flutterTask</string>
     <string name="facebook_app_id">760678555443115</string>
     <string name="fb_login_protocol_scheme">fb44af45442ee62f2b0bc771666cddb16b</string>
 </resources>
