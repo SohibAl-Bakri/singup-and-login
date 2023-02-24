@@ -3,6 +3,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_task/pages/auth/login_with_facebook.dart';
 import 'package:flutter_task/pages/auth/login_with_google.dart';
 import 'package:flutter_task/pages/auth/sign_up.dart';
 import 'package:flutter_task/pages/home/home_page.dart';
@@ -261,19 +262,9 @@ class _LogInState extends State<LogIn> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      const GoogleLogin(),
-                      InkWell(
-                        child: CircleAvatar(
-                          backgroundColor: Colors.pink[100],
-                          child: Icon(
-                            Ionicons.logo_facebook,
-                            color: Colors.lightBlue.shade400,
-                            size: 30,
-                          ),
-                        ),
-                        onTap: () {},
-                      ),
+                    children: const [
+                      GoogleLogin(),
+                      FacebookLogin(),
                     ],
                   )
                 ],
